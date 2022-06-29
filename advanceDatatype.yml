@@ -1,0 +1,77 @@
+# sequence type data
+student: !!seq
+ - marks
+ - name
+ - roll_number
+#  like this also
+students: [marks,name,roll_number]
+
+# some of the keys will be empty this is known as sparse sequence
+sparse sequence: 
+  - how
+  - are
+  -
+  - null
+  - youu
+---
+# nested sequences
+-
+ - mango
+ - apple
+ - kiwi
+-
+ - marks
+ - roll_num
+
+---
+# key: vlaue pairs are known as maps
+# !!map
+
+# nested maps: maps within a map
+name : Ansh Jhanwar
+role :
+  age: 20
+  job: student
+
+# same as like this
+Id: Ansh Jhanwar
+roles : {age: 20,job : student}
+
+# pairs: key may have duplicate values
+pair example: !!pairs
+ - job : student
+ - job : devloper
+
+# !!set will allow you to have unique values
+names: !!set
+ ? Ansh
+ ? Jhanwar
+ ? anshuman
+
+# dictionary !!omap
+people: !!omap
+ - ansh:
+    name : Ansh Jhanwar
+    age : 20
+    height: 5'11
+ - anshuman:
+    name: anshuman Maheswari
+    age: 32
+    height: 6'2
+
+# reusing the properties using anchors
+likings: &likes
+ fav fruit: mango
+ dislikes: grapes
+
+person1:
+ name: ansh
+ <<: *likes
+
+person2:
+ name: anshuman
+ <<: *likes
+ dislikes: berries
+
+
+ 
