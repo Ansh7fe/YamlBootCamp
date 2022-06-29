@@ -1,0 +1,19 @@
+"apple" : "I am a red fruit"
+1: "This is ansh roll number"
+---
+# Lists 
+- apple
+- mango
+- banana 
+- Apple
+#  yaml is case sensitive 
+---
+cities :
+ - newDelhi
+ - mumbai
+ - Bhilwara
+
+---
+cities: ["Bhilwara","Jaipur"]
+---
+{mango : "Yellow fruit", age: 56}

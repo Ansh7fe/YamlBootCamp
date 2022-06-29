@@ -1,0 +1,42 @@
+# String Variables
+name : Ansh Jhanwar
+fruit: "Apple"
+job: 'SDE'
+
+# Use | if you want those linebreaks to be preserved as \n (for instance, embedded markdown with paragraphs)
+bio : |
+ hello I am Ansh Jhanwar
+ i am very nice guy
+# suppose we have to write a line into multiple line then we will use > 
+message : >
+ this is 
+ a single 
+ line code
+
+#  integer datatype
+number: 546765
+
+# Float datatype
+Float : 678.99
+
+# boolean datatypes
+boolean : No  # N,n,false,FALSE,False
+# for true-> Y,y,yes
+
+# specify the type -> !!datatype
+zero: !!int 0
+positiveNumber : !!int 7
+negativeNumber: !!int -7
+binaryNum: !!int 011001
+commaValue: !!int +540_000  #540,000
+
+# floating Numbers
+marks: !!float 9.21
+not a number: .nan
+
+# null
+surname: !!null NULL
+~: this is a null key
+
+# dates and time
+date: !!timestamp 2022-06-30
